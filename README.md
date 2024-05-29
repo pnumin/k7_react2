@@ -7,16 +7,22 @@
 2. Tailwind CSS 설정 파일 생성 
    - npx tailwindcss init
 3. tailwind.config.js 파일 수정
-```
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
+   ```
+   /** @type {import('tailwindcss').Config} */
+   module.exports = {
+   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+   theme: {
+      extend: {},
+   },
+   plugins: [],
+   }
+   ```
+4. index.css 추가
+   ```
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+   ```
 # React Icon
    - npm install react-icons --save
    - https://react-icons.github.io/react-icons/
