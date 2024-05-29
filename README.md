@@ -32,12 +32,14 @@ module.exports = {
 2. .env 파일 gitIgnore에 .env를 추가
 
 # RESTful 테스팅
-1. 설치 npm install -g json-server
-2. 실행npx json-server --watch db.json --port 3005 
+1. 설치 
+- npm install -g json-server
+2. 실행 
+- npx json-server --watch db.json --port 3005 
 3. RESTful(Representational State Transfer)
 - 주로 HTTP 프로토콜을 사용하며, 웹 상에서 클라이언트와 서버 간의 통신을 단순하고 효율적으로 구현
  - RESTful API
-  - RESTful 아키텍처 스타일을 따르는 웹 API
+    - RESTful 아키텍처 스타일을 따르는 웹 API
 
  - HTTP 메서드와 CRUD 연산 매핑
     - GET: 자원의 표현을 요청  (읽기)
