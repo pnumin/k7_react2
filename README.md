@@ -33,19 +33,19 @@ module.exports = {
 
 # RESTful 테스팅
 1. 설치 
-- npm install -g json-server
+   - npm install -g json-server
 2. 실행 
-- npx json-server --watch db.json --port 3005 
+   - npx json-server --watch db.json --port 3005 
 3. RESTful(Representational State Transfer)
-- 주로 HTTP 프로토콜을 사용하며, 웹 상에서 클라이언트와 서버 간의 통신을 단순하고 효율적으로 구현
- - RESTful API
-    - RESTful 아키텍처 스타일을 따르는 웹 API
+   - 주로 HTTP 프로토콜을 사용하며, 웹 상에서 클라이언트와 서버 간의 통신을 단순하고 효율적으로 구현
+    - RESTful API
+       - RESTful 아키텍처 스타일을 따르는 웹 API
 
- - HTTP 메서드와 CRUD 연산 매핑
-    - GET: 자원의 표현을 요청  (읽기)
-    - POST: 새로운 자원을 생성  (생성)
-    - PUT: 기존 자원을 업데이트  (갱신)
-    - DELETE: 자원을 삭제  (삭제)
+    - HTTP 메서드와 CRUD 연산 매핑
+       - GET: 자원의 표현을 요청  (읽기)
+       - POST: 새로운 자원을 생성  (생성)
+       - PUT: 기존 자원을 업데이트  (갱신)
+       - DELETE: 자원을 삭제  (삭제)
 
 
 # VS code Extention
