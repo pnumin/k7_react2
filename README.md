@@ -4,7 +4,8 @@
 
 # tailwind css 설치
 1. npm install -D tailwindcss
-2. Tailwind CSS 설정 파일 생성 : npx tailwindcss init
+2. Tailwind CSS 설정 파일 생성 
+   - npx tailwindcss init
 3. tailwind.config.js 파일 수정
 ```
 /** @type {import('tailwindcss').Config} */
@@ -17,13 +18,14 @@ module.exports = {
 }
 ```
 # React Icon
-- npm install react-icons --save
+   - npm install react-icons --save
+   - https://react-icons.github.io/react-icons/
 
 # React Route
-- npm install react-router-dom
+   - npm install react-router-dom
 
 # Recoil 설치
-- npm install recoil
+   - npm install recoil
 
 # 환경변수 설정
 1. .env 만들기
