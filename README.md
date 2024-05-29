@@ -27,7 +27,7 @@ module.exports = {
 
 # 환경변수 설정
 1. .env 만들기
-   - .env 파일은 최상위 루트에 작성
+   - .env 파일은 최상위 루트에 작성
    - 환경변수명은 반드시 REACT_APP_으로 시작
 2. .env 파일 gitIgnore에 .env를 추가
 
