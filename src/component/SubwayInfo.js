@@ -1,4 +1,4 @@
-import { useEffect , useState} from "react";
+import { useEffect , useState, useRef} from "react";
 import sarea from '../db/sarea.json' ;
 
 export default function SubwayInfo() {
@@ -7,6 +7,7 @@ export default function SubwayInfo() {
   const [ops, setOps] = useState([]) ;
   const [areaData, setAreaData] = useState() ;
   const [tags, setTags] = useState([]) ;
+  const refTime = useRef();
 
   const handleSelectArea = (e) => {
     console.log(e.target.value)

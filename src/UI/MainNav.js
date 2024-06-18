@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom" ;
 import { useRecoilValue } from "recoil";
 import { stLogin }  from "../component/StAtom" ;
-
+import { atom1, atom2} from "../atoms/Atom1";
+// import { atom2 } from "../atoms/Atom2";
+import { useRef  } from 'react';
 export default function MainNav() {
   const isLogin = useRecoilValue(stLogin) ;
+  const at1 = useRecoilValue(atom1) ;
+  const at2 = useRecoilValue(atom2) ;
+
+  const refAt1 = useRef() ;
+  const refAt2 = useRef() ;
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
@@ -24,6 +31,13 @@ export default function MainNav() {
           <Link to='/subway' className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
             지하철대기정보
           </Link>
+        </div>
+        <div>
+          Atom1 : {at1} , Atom2 : {at2}
+          <input type="text" ref={refAt1} value={at1}
+              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+           <input type="text" ref={refAt2}  value={at2}
+              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
         </div>
         <div>
           <Link to='/login' className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
